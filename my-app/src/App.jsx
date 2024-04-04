@@ -1,12 +1,13 @@
 import "./App.css";
-import CardsList from "./components/cardsList/CardsList.jsx";
+import CardContainer from './components/cardsContainer/CardContainer.jsx';
+import Card from "./components/card/Card.jsx";
 
 function App() {
     return (
-    <div className="App">
-      
-      <CardsList />
-    </div>
+      <div className="App">
+      <CardContainer />
+      <Card />
+      </div>
   );
 }
 

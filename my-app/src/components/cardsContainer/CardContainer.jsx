@@ -1,10 +1,11 @@
 import "./CardContainer.css";
 import Card from "../card/Card.jsx";
+import { record } from "../cardInfo/Records.js"; 
 
 function CardContainer() {
   <div className='container'>
 {
-Records && Records.map(record => {
+record && record.map(record => {
 return (<Card/>)
 })
 }
