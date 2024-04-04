@@ -3,13 +3,15 @@ import Card from "../card/Card.jsx";
 import { record } from "../cardInfo/Records.js"; 
 
 function CardContainer() {
-  <div className='container'>
-{
-record && record.map(record => {
-return (<Card/>)
-})
-}
-</div>
+  return (
+    <div className='container'>
+      {
+        record && record.map((item, index) => (
+          <Card key={index} record={item} />
+        ))
+      }
+    </div>
+  );
 }
 
 export default CardContainer;
